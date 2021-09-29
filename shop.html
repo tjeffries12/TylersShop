@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>
+            Tyler's Shirts
+        </title>
+        <style>
+            .container{
+                margin: 1%;
+            }
+            .flex_row{
+                flex-direction: row;
+                margin:5px;
+                padding:5px;
+                justify-content: flex-start;
+                border:solid;
+                flex-basis: content;
+                background-color: white;
+            }
+            img{
+                height:250px;
+                width:250px;
+            }
+            h1{
+                font-family: "sans-serif"
+            }
+           
+            body{
+            margin: 0%;
+            background-color: beige;
+
+        }
+
+        div{
+            margin-bottom: 10px;
+        }
+        ul{
+            background-color: rgb(175, 175, 236);
+            overflow: hidden;
+            list-style-type:none;
+            margin:0;
+            padding:0;
+            position: sticky;
+            position: -webkit-sticky;
+            width: 100%;
+            top:0;
+        }
+
+        li{
+            float:left;
+            
+        }
+        
+        li a{
+            display: block;
+            padding: 14px 16px;
+            color: white;
+            text-decoration:none;
+        }
+
+        .active{
+            background-color:green;
+            color: blue;
+        }
+
+        li a:hover:not(.active){
+            background-color:indianred;
+        }
+		
+        </style>
+    </head>
+    <body>
+        <div><h1>Our Great Product's:</h1></div>
+       
+            <ul>
+                <li><a href='index.html'>Home</a> </li>
+                <li><a href='aboutus.html'>About Us</a> </li>
+                <li><a href='contactus.html'>Contact Us</a></li>
+                <li class="active"><a href='shop.html'>Shop</a> </li>
+                <li><a href='links.html'>Links</a> </li>
+            </ul>
+    
+        <div class='container' id='divProducts'>
+            <div class="flex_row">
+                <p>Proudct name: T-Shirts</p>
+                <p>Price: $10</p>
+                <p><img src="images/red-shirt.jpg" alt="T-Shirts"/></p>
+            </div>
+            <div class="flex_row">
+                <p>Proudct name: Shorts</p>
+                <p>Price: $15</p>
+                <p><img src="images/red-short.jpg" alt="Shorts"/></p>
+            </div>
+            <div class="flex_row">
+                <p>Proudct name: Sneakers</p>
+                <p>Price: $75</p>
+                <p><img src="images/sneaker1.jpg" alt="Sneakers"/></p>
+            </div>
+        </div>
+        <footer class="footer">(c) 2021 Tyler's Products</footer>
+    </body>
+   
+    </html>
